@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "64A84F6B-9DE5-4273-B109-AB5D59DA8F44"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75A106B1-DBDA-4D92-A76B-7584A0192F4B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ServicesApp/Managers/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getData(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "75A106B1-DBDA-4D92-A76B-7584A0192F4B - ad0a31ee5b6af21f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ServicesApp.ApiManager.getData(for: Foundation.URL) async throws -&gt; Foundation.Data"
+                  moduleName = "ServicesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evgenijbelakov/Desktop/swift/homework/ServicesApp/ServicesApp/Managers/ApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "75A106B1-DBDA-4D92-A76B-7584A0192F4B - 7683596f13b6c024"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for ServicesApp.ApiManager.getData(for: Foundation.URL) async throws -&gt; Foundation.Data"
+                  moduleName = "ServicesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evgenijbelakov/Desktop/swift/homework/ServicesApp/ServicesApp/Managers/ApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "75A106B1-DBDA-4D92-A76B-7584A0192F4B - 6a2c43f1310d3619"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ServicesApp.ApiManager.getData(for: Foundation.URL) async throws -&gt; Foundation.Data"
+                  moduleName = "ServicesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evgenijbelakov/Desktop/swift/homework/ServicesApp/ServicesApp/Managers/ApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "75A106B1-DBDA-4D92-A76B-7584A0192F4B - c8537cf37c10d418"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for ServicesApp.ApiManager.getData(for: Foundation.URL) async throws -&gt; Foundation.Data"
+                  moduleName = "ServicesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evgenijbelakov/Desktop/swift/homework/ServicesApp/ServicesApp/Managers/ApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B57B7F8D-2520-487A-94D9-B49BDC827DC9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ServicesApp/Controllers/ServicesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "reloadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B57B7F8D-2520-487A-94D9-B49BDC827DC9 - d81069e008d4a1a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in ServicesApp.ServicesViewController.reloadData() -&gt; ()"
+                  moduleName = "ServicesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evgenijbelakov/Desktop/swift/homework/ServicesApp/ServicesApp/Controllers/ServicesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "B57B7F8D-2520-487A-94D9-B49BDC827DC9 - b9484db9b8ad2c2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in ServicesApp.ServicesViewController.reloadData() -&gt; ()"
+                  moduleName = "ServicesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evgenijbelakov/Desktop/swift/homework/ServicesApp/ServicesApp/Controllers/ServicesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "B57B7F8D-2520-487A-94D9-B49BDC827DC9 - ab77b78f144725c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in ServicesApp.ServicesViewController.reloadData() -&gt; ()"
+                  moduleName = "ServicesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evgenijbelakov/Desktop/swift/homework/ServicesApp/ServicesApp/Controllers/ServicesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "B57B7F8D-2520-487A-94D9-B49BDC827DC9 - d5cb177b95f06bf9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in ServicesApp.ServicesViewController.reloadData() -&gt; ()"
+                  moduleName = "ServicesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evgenijbelakov/Desktop/swift/homework/ServicesApp/ServicesApp/Controllers/ServicesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

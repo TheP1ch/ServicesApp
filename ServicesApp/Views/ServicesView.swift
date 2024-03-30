@@ -24,6 +24,13 @@ class ServicesView: UIView {
         return tableView
     }()
     
+    private lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl(frame: .zero, primaryAction: refreshAction)
+        refreshControl.tintColor = .gray
+        
+        return refreshControl
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -35,6 +42,7 @@ class ServicesView: UIView {
     }
     
     func configure(servicesData: [Service]){
+
         self.servicesData = servicesData
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -47,12 +55,24 @@ class ServicesView: UIView {
         tableView.dataSource = self
         tableView.delegate = self
         
+        tableView.refreshControl = refreshControl
+        
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: topAnchor),
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
+    }
+    
+    private lazy var refreshAction: UIAction = UIAction{ [weak self] _ in
+        defer{
+            self?.refreshControl.endRefreshing()
+        }
+        guard let self, let delegate = delegate else {return}
+        
+        delegate.reloadData()
+        
     }
 }
 
@@ -66,18 +86,25 @@ extension ServicesView: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.configureCell(cellData: servicesData[indexPath.row])
-
+        Task{ [weak self] in
+            do{
+                guard let self else {return}
+                let imageUrl = self.servicesData[indexPath.row].iconUrl
+                let image = try await self.delegate?.downloadImage(url: imageUrl)
+                
+                cell.uploadServiceImage(img: image ?? UIImage(named: "service.placeholder.image")!)
+            } catch {
+                print(error)
+            }
+        }
+        
         return cell
     }
 }
 
 extension ServicesView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print(indexPath)
-//        print(servicesData[indexPath.row].link)
-//        UIApplication.shared.open()
         delegate?.openBrowser(for: URL(string: servicesData[indexPath.row].link)!)
-//        print(UIApplication.shared.canOpenURL(URL(string: "citydrive://citydrive.ru")!))
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

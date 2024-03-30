@@ -20,6 +20,7 @@ class ServiceTableViewCell: UITableViewCell {
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 24
+        imageView.image = UIImage(named: "service.placeholder.image")
         
         return imageView
     }()
@@ -85,7 +86,11 @@ class ServiceTableViewCell: UITableViewCell {
         serviceTitle.text = cellData.name
         
         serviceDescription.text = cellData.description
-        serviceImage.image = UIImage(named: "vk")
+
+    }
+    
+    func uploadServiceImage(img: UIImage){
+        serviceImage.image = img
     }
     
 }

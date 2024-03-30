@@ -19,8 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-//        let rootVC = UINavigationController(rootViewController: )
-        window.rootViewController = ServicesViewController(apiManager: ApiManager())
+        let rootVC = UINavigationController(
+            rootViewController: ServicesViewController(
+            apiManager: ApiManager(
+                fileManager: ImageFileManager())
+            )
+        )
+        window.rootViewController = rootVC
         window.makeKeyAndVisible()
         
         self.window = window

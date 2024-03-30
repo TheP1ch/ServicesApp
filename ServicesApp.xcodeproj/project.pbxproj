@@ -17,6 +17,9 @@
 		9C3599482BB6FF0200239361 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3599472BB6FF0200239361 /* ApiManager.swift */; };
 		9C35994A2BB6FF8A00239361 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3599492BB6FF8A00239361 /* Service.swift */; };
 		9C35994D2BB7119C00239361 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35994C2BB7119C00239361 /* UILabel+Extensions.swift */; };
+		9C7B00532BB8B63A00626778 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B00522BB8B63A00626778 /* ViewController+Extensions.swift */; };
+		9C7B00552BB8B68E00626778 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B00542BB8B68E00626778 /* UIColor+Extensions.swift */; };
+		9C7B00572BB8BBC100626778 /* ImageFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B00562BB8BBC100626778 /* ImageFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		9C3599472BB6FF0200239361 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		9C3599492BB6FF8A00239361 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		9C35994C2BB7119C00239361 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		9C7B00522BB8B63A00626778 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		9C7B00542BB8B68E00626778 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		9C7B00562BB8BBC100626778 /* ImageFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				9C3599472BB6FF0200239361 /* ApiManager.swift */,
+				9C7B00562BB8BBC100626778 /* ImageFileManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				9C35994C2BB7119C00239361 /* UILabel+Extensions.swift */,
+				9C7B00522BB8B63A00626778 /* ViewController+Extensions.swift */,
+				9C7B00542BB8B68E00626778 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -198,10 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3599442BB6FE3C00239361 /* ServicesView.swift in Sources */,
+				9C7B00552BB8B68E00626778 /* UIColor+Extensions.swift in Sources */,
 				9C35994A2BB6FF8A00239361 /* Service.swift in Sources */,
 				9C35992F2BB6FA6700239361 /* ServicesViewController.swift in Sources */,
 				9C3599462BB6FE5500239361 /* ServiceTableViewCell.swift in Sources */,
+				9C7B00532BB8B63A00626778 /* ViewController+Extensions.swift in Sources */,
 				9C35994D2BB7119C00239361 /* UILabel+Extensions.swift in Sources */,
+				9C7B00572BB8BBC100626778 /* ImageFileManager.swift in Sources */,
 				9C35992B2BB6FA6700239361 /* AppDelegate.swift in Sources */,
 				9C3599482BB6FF0200239361 /* ApiManager.swift in Sources */,
 				9C35992D2BB6FA6700239361 /* SceneDelegate.swift in Sources */,

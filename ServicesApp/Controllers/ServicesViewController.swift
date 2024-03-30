@@ -12,6 +12,8 @@ protocol ServicesDelegate: AnyObject {
     func reloadData() -> ()
     
     func openBrowser(for: URL) -> ()
+    
+    func downloadImage(url: String) async throws -> UIImage
 }
 
 class ServicesViewController: UIViewController {
@@ -38,9 +40,10 @@ class ServicesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Сервисы"
+        navigationItem.title = "Сервисы"
         view.backgroundColor = .systemBackground
         configurePrimaryView()
+        reloadData()
     }
     
     private func configurePrimaryView() {
@@ -59,11 +62,24 @@ class ServicesViewController: UIViewController {
 
 extension ServicesViewController: ServicesDelegate{
     func reloadData() {
-        
+        Task{
+            do{
+                self.showLoadingView()
+                let data = try await apiManager.obtainServices()
+                self.primaryView.configure(servicesData: data)
+                self.dismissLoadingView()
+            }catch{
+                print(error)
+                self.dismissLoadingView()
+            }
+        }
     }
     
     func openBrowser(for citeUrl: URL) {
         present(SFSafariViewController(url: citeUrl), animated: true)
     }
     
+    func downloadImage(url: String) async throws -> UIImage {
+         return try await apiManager.downloadImage(for: url)
+    }
 }
