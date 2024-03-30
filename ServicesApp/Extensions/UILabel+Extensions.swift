@@ -1,0 +1,8 @@
+//
+//  UILabel+Extensions.swift
+//  ServicesApp
+//
+//  Created by Евгений Беляков on 29.03.2024.
+//
+
+import Foundation
